@@ -1,0 +1,18 @@
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: jdbc:mysql://localhost:3306/serverdb
+    driverClassName: com.mysql.jdbc.Driver
+    username: springstudent
+    password: springstudent
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+      show-sql: true
