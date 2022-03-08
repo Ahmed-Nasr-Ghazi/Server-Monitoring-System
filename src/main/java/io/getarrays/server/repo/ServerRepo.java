@@ -7,7 +7,8 @@ import org.springframework.data.repository.query.FluentQuery;
 
 import java.util.function.Function;
 
-public interface ServerRepo extends JpaRepository<ServerRepo, Long> {
+public interface ServerRepo extends JpaRepository<Server, Long> {
 
     Server findByIpAddress(String ipAddress);
+
 }
